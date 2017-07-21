@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="http://www.google.com" id="" method="post">
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" name="username" size="15" maxlength="20" required="required">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" size="15" maxlength="20" required="required">
+        </p>
+        <p>
+            <label for="username">Departure date:</label>
+            <input type="date" name="depart">
+        </p>
+        <input type="Submit" name="Subscribe" value="subscribe">
+    </form>
+    <form action="https://example.com/comments.php">
+        <p>
+            What did you think of this gig?
+        </p>
+        <textarea name="comments" id="" cols="30" rows="4">Enter your commments...
+        </textarea>
+    </form>
+    <form action="https://example.com/radios.php">
+        <p>
+            Please select your favorite genre:
+            <br>
+            <input type="radio" name="genre" value="pop" checked="checked"> Pop
+            <input type="radio" name="genre" value="rock"> Rock
+            <input type="radio" name="genre" value="jazz"> Jazz
+        </p>
+    </form>
+    <form action="index.html">
+        <p>
+            Please select your favorite music services:
+            <br>
+            <input type="checkbox" name="service" value="itunes" checked="checked"> iTunes
+            <input type="checkbox" name="service" value="Last.fm"> Last.fm
+            <input type="checkbox" name="service" value="spotify"> Spotify
+        </p>
+    </form>
+    <form action="index.html">
+        <p>
+            What device do you listen to music on?
+        </p>
+        <select name="devices" id="">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+        </select>
+    </form>
+    <form action="http://www.example.com/profile.php">
+        <p>Do you play any of the following instruments? (You can select more than one option by holding down control on a PC or command key on a Mac while selecting different options.)</p>
+        <select name="instruments" size="3" multiple="multiple">
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+        </select>
+    </form>
+    <form action="https://example.com/upload.php" method="post">
+        <p>Upload your song in mp3 format:</p>
+        <input type="file" name="user-song">
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    <hr>
+    <!--没有for属性的隐式联系-->
+    <label>Age:
+        <input type="text" name="age">
+    </label>
+    <br> Gender:
+    <!--label中的for属性和input中的id形成显示联系,这种方式貌似更好-->
+    <input type="radio" id="female" name="gender" value="f">
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="m">
+    <label for="male">Male</label>
+    <fieldset>
+        <legend>Contact details</legend>
+        <label for="">Email:
+            <br>
+            <input type="email" name="email">
+        </label>
+        <br>
+        <label for="">Mobile:
+            <br>
+            <input type="text" name="mobile">
+        </label>
+        <br>
+        <label for="">Search:
+            <br>
+            <input type="search" name="search" placeholder="Enter keyword">
+        </label>
+        <br>
+        <label>
+            <input type="submit" value="Submit">
+        </label>
+        <br>
+    </fieldset>
+</body>
+
+</html>
