@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        p.n {
+            white-space: normal;
+            font: bold italic 1.5em "Monaco";
+        }
+        p.p {
+            white-space: pre;
+        }
+        p.pw {
+            white-space: pre-wrap;
+        }
+        p.nw {
+            white-space: nowrap;
+            cursor:pointer;
+        }
+        .cursor_test {
+            cursor:crosshair;
+        }
+        table.t1, table.t2 {
+            table-layout: fixed;
+        }
+        table.t3 {
+            table-layout: automatic;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="white-space_test">
+    <h2>white-space_test</h2>
+        <p class="n">
+        (1.5em)
+            在默认情况下，多个
+
+            空白格或者           换行符
+
+            会被     合并成一个空白格
+        </p>
+        <hr>
+        <p class="p">
+            保留所有的    空白格
+以及换行符
+相当于pre元素
+特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别
+        </p>
+        <hr>
+        <p class="pw">
+            保留所有的    空白格
+以及换行符
+相当于pre元素
+特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别长的一段文字特别
+        </p>
+        <hr>
+        <p class="nw">
+            no wrap
+            no wrap
+            no wrap
+            no wrap
+            until there is a
+            br<br>
+            it wrap now
+        </p>
+    </div>
+
+    <div class="cursor_test">
+        <p>
+            Hover your mouse on the text.
+        </p>
+    </div>
+
+    <div class="table_test">
+        <table class="t1" border="1" width="100%">
+        <thead>中文看不到效果</thead>
+            <tr>
+                <td width="100px">特别长的一段文字特别长的一段文字特别长的</td>
+                <td >特别长</td>
+            </tr>
+        </table>
+        <br>
+
+        <table class="t2" border="1" width="100%">
+            <tr>
+                <td width="100px">dfawefawefafwefwefwefwfewfweawefawefa</td>
+                <td >dfawe</td>
+            </tr>
+        </table>
+
+        <table class="t3" border="1" width="100%">
+            <tr>
+                <td width="10%">efawefawefawefawefawwefwefwefwfeewfee</td>
+                <td>fwefw</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

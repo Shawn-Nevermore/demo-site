@@ -3,6 +3,22 @@
 
 <head>
     <meta charset="utf-8">
+    <style type="text/css">
+    form {
+        width: 50%;
+        background-color: #AEB4FF;
+    }
+
+    div#test {
+        background-image: url(images/strike_of_kings.jpg);
+        /* width: 50%; */
+        height: 100px;
+    }
+
+    #go2index {
+        text-decoration: none;
+    }
+    </style>
 </head>
 
 <body>
@@ -56,11 +72,14 @@
             <input type="submit" value="Submit review">
         </fieldset>
         <fieldset>
-        <legend>Map</legend>
-            <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed"
-            frameborder="0" width="450" height="350" scrolling="no" seamless=""></iframe>
+            <legend>Map</legend>
+            <iframe src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed" frameborder="0" width="450" height="350" scrolling="no" seamless=""></iframe>
             <p>&copy:The Art Shop</p>
         </fieldset>
+        <div id="test">test div
+            <br>
+            <a href="index.html" id="go2index">turn to index page</a>
+        </div>
     </form>
 </body>
 
